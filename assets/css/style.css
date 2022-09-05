@@ -62,3 +62,36 @@ Global Styles
   box-sizing: border-box;
 }
 
+.cont {
+  background-image: url(https://adonius.club/uploads/posts/2022-02/thumbs/1644496094_64-adonius-club-p-temno-zelenii-fon-gradient-70.jpg);
+}
+
+.ground {
+  height: 25rem;
+
+  border: 2px solid #222;
+}
+
+.ground img {
+  width: 6rem;
+}
+/* .sep {
+  width: 1px;
+  height: 24.5rem;
+} */
+
+.human-board,
+.bot-board {
+  border-right: 2px solid #222;
+  flex-direction: column;
+}
+
+.score {
+  border: 2px solid #222;
+  border-radius: 3px;
+}
+
+thead,
+tbody {
+  font-size: 1.4rem;
+}

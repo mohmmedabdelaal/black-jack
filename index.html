@@ -10,28 +10,47 @@
       <h4 class="mb-3">Let't Play</h4>
     </div>
     <div class="container cont">
-      <div class="row">
-        <div class="col-sm-6">
-          <h1 class="bg-danger">Here div1</h1>
+      <div class="row ground">
+        <div
+          class="col-sm-6 d-flex justify-content-start align-items-center text-light mt-5 human-board"
+        >
+          <div class="row">
+            <h1>You:<span id="human"> 0</span></h1>
+          </div>
+          <div class="row d-flex justify-content-between">
+            <div class="col-sm-3"><img src="" /></div>
+            <div class="col-sm-3"><img src="" /></div>
+            <div class="col-sm-3"><img src="" /></div>
+          </div>
         </div>
-        <div class="col-sm-6">
-          <h1 class="bg-info">here div2</h1>
+
+        <div
+          class="col-sm-6 d-flex justify-content-start align-items-center text-light mt-5 bot-board"
+        >
+          <div class="row">
+            <h1>You:<span id="bot"> 0</span></h1>
+          </div>
+          <div class="row d-flex justify-content-between">
+            <div class="col-sm-3"><img src="" /></div>
+            <div class="col-sm-3"><img src="" /></div>
+            <div class="col-sm-3"><img src="" /></div>
+          </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row play">
         <div
           class="col-sm-12 d-flex justify-content-center align-items-center m-1"
         >
-          <button class="btn btn-info m-1">Hit</button>
-          <button class="btn btn-warning m-1">Stand</button>
-          <button class="btn btn-danger m-1">Deal</button>
+          <button class="btn-lg btn-info m-1" id="hit-btn">Hit</button>
+          <button class="btn-lg btn-warning m-1" id="stand-btn">Stand</button>
+          <button class="btn-lg btn-danger m-1" id="deal-btn">Deal</button>
         </div>
       </div>
     </div>
     <div class="container score">
       <div class="row">
         <div class="col-sm-12 d-flex justify-content-center align-items-center">
-          <table class="table">
+          <table class="table w-50 text-lg-center">
             <thead>
               <tr>
                 <th scope="col">Wins</th>

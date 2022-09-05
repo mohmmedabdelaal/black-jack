@@ -25,7 +25,7 @@ export default {
       },
       {
         test: /\.(png|svg|jpg|gif|jpeg)$/,
-        use: ['file-loader'],
+        loader: ['url-loader'],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf|mp3)$/,
