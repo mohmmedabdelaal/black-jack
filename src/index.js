@@ -1,13 +1,16 @@
 import '../assets/css/mdb.min.css';
 import '../assets/css/style.css';
+// Cards
 import theCards from './Cards';
-
 import hitSound from '../assets/sounds/hit.mp3';
 
+
+/// Btns
 const hitBtn = document.querySelector('#hit-btn');
 const standBtn = document.querySelector('#stand-btn');
 const dealBtn = document.querySelector('#deal-btn');
 
+/// game data
 const info = {
   human: { scoreSpan: '#human', div: '.human-div', score: 0 },
   bot: { scoreSpan: '#bot', div: '.bot-div', score: 0 },
@@ -17,10 +20,10 @@ const info = {
   draws: 0,
 };
 
-separate;
-
 const { human, bot, cards } = info;
 const hSound = new Audio(hitSound);
+
+const blackJackGame = () =>{
 
 hitBtn.addEventListener('click', function () {
   const card = pickCard();
@@ -28,12 +31,13 @@ hitBtn.addEventListener('click', function () {
 });
 
 dealBtn.addEventListener('click', function () {
-  //   resetCards();
+    resetCards();
 });
 
-// standBtn.addEventListener('click', function () {
-//   console.log('stand button clicked');
-// });
+standBtn.addEventListener('click', function () {
+  console.log('stand button clicked');
+});
+
 const pickCard = () => {
   return cards[Math.floor(Math.random() * 13)];
 };
@@ -53,3 +57,6 @@ const resetCards = () => {
     allImgs[i].remove();
   }
 };
+}
+
+blackJackGame();
